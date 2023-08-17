@@ -3,3 +3,15 @@ Thu 17 Aug 2023 08:26:10 PM UTC:
  tests:  0|7
 total_score: 0/70
 b43e9bf
+Thu 17 Aug 2023 08:33:06 PM UTC: 
+ exercises.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:16:17: error: ‘array’ undeclared (first use in this function); did you mean ‘arr’?
+   16 |     if (mayor < array[i]){
+      |                 ^~~~~
+      |                 arr
+exercises.c:16:17: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+00b6447
