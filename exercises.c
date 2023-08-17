@@ -17,7 +17,6 @@ int findMax(int arr[], int size) {
       mayor= arr[i];
     }
   }
-  
   return mayor; }
 
 /*
@@ -25,7 +24,15 @@ Ejercicio 2: Invertir un Arreglo
 Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
-void reverseArray(int arr[], int size) {}
+void reverseArray(int arr[], int size) {
+  int arrayC[size];
+  for(int i = size - 1, j = 0; i >= 0 && j < size; i++){
+    arrayC[j]=arr[i];
+  }
+  for(int a= 0; a < size; a++){
+    arr[a] = arrayC[a];
+  }
+}
 
 /*
 Ejercicio 3: Filtrar Números Pares

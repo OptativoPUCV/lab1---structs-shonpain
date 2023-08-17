@@ -21,3 +21,14 @@ Thu 17 Aug 2023 08:33:19 PM UTC:
  tests:  0|6
 total_score: 10/70
 f2afe13
+Thu 17 Aug 2023 08:48:40 PM UTC: 
+ exercises.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:33:20: error: ‘*arrayC[0]’ may be used uninitialized [-Werror=maybe-uninitialized]
+   33 |     arr[a] = arrayC[a];
+      |              ~~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+40bc4e3
