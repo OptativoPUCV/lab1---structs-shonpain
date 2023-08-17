@@ -50,7 +50,8 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
       contPares++;
     }
   }
-  int *arrayPares = (int*)malloc(contPares * sizeof(int);
+  
+  int *arrayPares = (int*)malloc(contPares * sizeof(int));
   if(arrayPares == NULL){
     *newSize = 0;
     return NULL;
