@@ -13,8 +13,8 @@ int findMax(int arr[], int size) {
   int mayor = -1;
     
   for(int i = 0; i < size; i++){
-    if (mayor < array[i]){
-      mayor= array[i];
+    if (mayor < arr[i]){
+      mayor= arr[i];
     }
   }
   

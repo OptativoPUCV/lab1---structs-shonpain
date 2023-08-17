@@ -15,3 +15,9 @@ exercises.c:16:17: error: ‘array’ undeclared (first use in this function); d
 exercises.c:16:17: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 00b6447
+Thu 17 Aug 2023 08:33:19 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|6
+total_score: 10/70
+f2afe13
