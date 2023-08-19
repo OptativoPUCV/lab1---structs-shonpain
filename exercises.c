@@ -102,20 +102,20 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
 int checkSorted(int arr[], int size) {
-    int ascending = 1;
-    int descending = 1;
+    int ascendente = 1;
+    int descendente = 1;
 
     for (int i = 1; i < size; i++) {
         if (arr[i] > arr[i - 1]) {
-            descending = 0;
+            descendente = 0;
         } else if (arr[i] < arr[i - 1]) {
-            ascending = 0;
+            ascendente = 0;
         }
     }
 
-    if (ascending) {
+    if (ascendente) {
         return 1; // Orden ascendente
-    } else if (descending) {
+    } else if (descendente) {
         return -1; // Orden descendente
     } else {
         return 0; // No ordenado
@@ -173,7 +173,6 @@ Nodo *crearListaEnlazada(int arr[], int size) {
     for (int i = 0; i < size; i++) {
         Nodo *nuevoNodo = (Nodo *)malloc(sizeof(Nodo));
         if (nuevoNodo == NULL) {
-            // Manejo de error si no se pudo asignar memoria
             perror("Error en malloc");
             exit(1);
         }
@@ -189,6 +188,5 @@ Nodo *crearListaEnlazada(int arr[], int size) {
             ultimoNodo = nuevoNodo;
         }
     }
-
     return primerNodo;
 }
